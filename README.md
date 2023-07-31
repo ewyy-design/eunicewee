@@ -9,7 +9,7 @@
 </p>
 <p align="center">
   <a href="https://app.netlify.com/sites/eunicewee/deploys" target="_blank">
-    [![Netlify Status](https://api.netlify.com/api/v1/badges/681f7cc2-8965-433f-bec0-8c703add3a66/deploy-status)]
+      <img src="https://api.netlify.com/api/v1/badges/681f7cc2-8965-433f-bec0-8c703add3a66/deploy-status" alt="Netlify Status" />
   </a>
 </p>
 <!-- Place photo here -->
