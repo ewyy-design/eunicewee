@@ -61,9 +61,9 @@ npm run serve
 2. Connect to the chosen repository
 
 3. In Site Configuration > Build & deploy > Continuous deployment > Build settings: <br>
-   Base directory: {the directory which have your react application} <br>
-   Build command: npm run build <br>
-   Publish directory: /{the directory which have your react application}/build <br>
+   <b>Base directory:</b> {the directory which have your react application} <br>
+   <b>Build command:</b> npm run build <br>
+   <b>Publish directory:</b> /{the directory which have your react application}/build <br>
 
 ## 🎨 Color Reference
 
