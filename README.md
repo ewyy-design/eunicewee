@@ -54,6 +54,16 @@ npm start
 npm run serve
 ```
 
+## 🔗 Linking Github to Netlify
+1. Sign in Netlify with GitHub
+
+2. Connect to the chosen repository
+
+3. In Site Configuration > Build & deploy > Continuous deployment > Build settings:
+Base directory: <the directory which have your react application>
+Build command: npm run build
+Publish directory: /<the directory which have your react application>/build
+
 ## 🎨 Color Reference
 
 | Color         | Hex                                                                |
