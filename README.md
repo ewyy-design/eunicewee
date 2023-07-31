@@ -22,8 +22,8 @@
 
 | Color         | Hex                                                                    |
 | ------------- | ---------------------------------------------------------------------- |
-| Prussian Blue | ![#023047](https://via.placeholder.com/10/0a192f?text=+) `#023047` |
-| White         | ![#ffffff](https://via.placeholder.com/10/303C55?text=+) `#ffffff` |
-| Bittersweet   | ![#ED6A5A](https://via.placeholder.com/10/8892b0?text=+) `#ED6A5A` |
-| Light Coral   | ![#EC9192](https://via.placeholder.com/10/a8b2d1?text=+) `#EC9192` |
-| Perisan Green | ![#1B998B](https://via.placeholder.com/10/0a192f?text=+) `#1B998B` |
+| Prussian Blue | ![#023047](https://via.placeholder.com/10/023047?text=+) `#023047` |
+| White         | ![#FFFFFF](https://via.placeholder.com/10/FFFFFF?text=+) `#FFFFFF` |
+| Bittersweet   | ![#ED6A5A](https://via.placeholder.com/10/ED6A5A?text=+) `#ED6A5A` |
+| Light Coral   | ![#EC9192](https://via.placeholder.com/10/EC9192?text=+) `#EC9192` |
+| Perisan Green | ![#1B998B](https://via.placeholder.com/10/1B998B?text=+) `#1B998B` |
