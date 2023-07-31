@@ -8,7 +8,8 @@
   The first iteration of <a href="https://eunicewee.com" target="_blank">eunicewee.com</a> built with <a href="https://react.dev/" target="_blank">React</a> and hosted with <a href="https://www.netlify.com/" target="_blank">Netlify</a>
 </p>
 <p align="center">
-  [![Netlify Status](https://api.netlify.com/api/v1/badges/681f7cc2-8965-433f-bec0-8c703add3a66/deploy-status)](https://app.netlify.com/sites/eunicewee/deploys)
+  <a href="https://app.netlify.com/sites/eunicewee/deploys" target="_blank">
+    [![Netlify Status](https://api.netlify.com/api/v1/badges/681f7cc2-8965-433f-bec0-8c703add3a66/deploy-status)]
   </a>
 </p>
 <!-- Place photo here -->
