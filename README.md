@@ -16,7 +16,43 @@
 
 ## 🛠 Installation & Set Up
 
+1. Create new React application
+
+```sh
+npx create-react-app eunice-wyy
+```
+
+2. Install and use the correct version of Node using [NVM](https://github.com/nvm-sh/nvm)
+
+```sh
+npm install
+```
+
+3. Install dependencies
+
+```sh
+npm install <dependencies>
+```
+
+4. Start development server
+
+```sh
+npm start
+```
+
 ## 🚀 Building and Running for Production
+
+1. Generate a full static production build
+
+```sh
+npm start
+```
+
+2. Preview the site as it will appear once deployed
+
+```sh
+npm run serve
+```
 
 ## 🎨 Color Reference
 
