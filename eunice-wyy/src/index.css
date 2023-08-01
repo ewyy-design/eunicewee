@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Carlito:wght@400;700&family=Radley:ital@0;1&family=Roboto:wght@500&display=swap");
+
 * {
   margin: 0;
   padding: 0;
@@ -8,6 +10,156 @@
   text-decoration: none;
 }
 
+:root {
+  --container-width-lg: 75%;
+  --container-width-md: 86%;
+  --container-width-sm: 90%;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+body {
+  color: #ffffff;
+  font-family: "Radley", serif;
+  /* font-family: "Carlito", sans-serif;
+  font-family: "Roboto", sans-serif; */
+  line-height: 1.7;
+}
+
 @import "tailwindcss/base";
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
+
+.home {
+  background-color: #023047;
+}
+
+.photo,
+.contact {
+  background-color: #ed6a5a;
+}
+
+.about,
+.experience,
+.work {
+  background-color: #023047;
+}
+
+/* =============== GENERAL STYLES =============== */
+.container {
+  width: var(--container-width-lg);
+  margin: 0 auto;
+}
+
+.section {
+  margin-top: 4rem;
+  margin-bottom: 3rem;
+}
+
+.nav-font,
+.header-sub {
+  font-family: "Carlito", sans-serif;
+}
+
+.highlight-green {
+  color: #1b998b;
+}
+
+.highlight-red,
+.title {
+  color: #ed6a5a;
+}
+
+.nav-right a {
+  padding-right: 50px;
+}
+
+.line {
+  width: 100px;
+  height: 20px;
+}
+
+.contact {
+  color: #000000;
+}
+
+.header__socials {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  float: left;
+  gap: 0.8rem;
+  position: absolute;
+  left: 30px;
+  bottom: 3rem;
+}
+
+.header__socials::after {
+  content: "";
+  display: block;
+  width: 1px;
+  height: 5rem;
+  background-color: #ffffff;
+}
+
+.header__contact::after {
+  content: "";
+  display: block;
+  width: 1px;
+  height: 5rem;
+  margin-right: -120px;
+  background-color: #ffffff;
+}
+
+.header__contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  float: right;
+  gap: 0.8rem;
+  position: absolute;
+  right: 30px;
+  bottom: 3rem;
+}
+
+.header__contact a {
+  position: relative;
+  right: -60px;
+  bottom: 5rem;
+  transform: rotate(90deg);
+}
+
+.header__socials.hidden {
+  gap: 0.8rem;
+  position: relative;
+  left: 30px;
+  bottom: 3rem;
+}
+
+/* =============== MEDIA QUERIES (MEDIUM DEVICES) =============== */
+@media screen and (max-width: 1024px) {
+  .container {
+    width: var(--container-width-md);
+  }
+
+  .section {
+    margin-top: 6rem;
+  }
+}
+
+/* =============== MEDIA QUERIES (SMALL DEVICES) =============== */
+@media screen and (max-width: 600px) {
+  .container {
+    width: var(--container-width-sm);
+  }
+
+  .section {
+    margin-top: 2rem;
+  }
+}

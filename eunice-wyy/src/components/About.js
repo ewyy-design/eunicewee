@@ -1,9 +1,16 @@
-import React from 'react'
+import React from "react"
 
 const About = () => {
   return (
     <div>
-      
+      <div className="photo">Photo</div>
+      <div className="about">
+        <div className="container">
+          <p class="about, title">
+            <em>About Me</em>
+          </p>
+        </div>
+      </div>
     </div>
   )
 }

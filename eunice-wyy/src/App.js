@@ -1,9 +1,20 @@
 import React from "react"
 
+// My components
+import Home from "./components/Home"
+import About from "./components/About"
+import Experience from "./components/Experience"
+import Work from "./components/Work"
+import Contact from "./components/Contact"
+
 const App = () => {
   return (
     <div>
-      <h1 className="text-7xl font-bold underline text-blue-600/100 pl-10">Hello world!</h1>
+      <Home />
+      <About />
+      <Experience />
+      <Work />
+      <Contact />
     </div>
   )
 }
