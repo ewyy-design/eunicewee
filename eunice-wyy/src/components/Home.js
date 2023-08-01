@@ -53,7 +53,7 @@ const Home = () => {
         <h2 className="text-2xl pb-20 header-sub ml-48 mr-48">
           I'm a software engineer with <span className="highlight-red">a passion for data</span> and a <span className="highlight-red">frontend design aficionado</span>, merging the power of data engineering with captivating user experiences.
         </h2>
-        <a href={CV} target="_blank" className="highlight-green text-2xl">
+        <a href={CV} target="__blank" className="highlight-green text-2xl">
           <em>Hire me</em>
         </a>
         <Player src="https://lottie.host/490d5227-9ad2-4d9e-8197-d02e7f2609dc/CJuNilNsbu.json" className="player line transform -translate-y-1/4" background="transparent" speed="1" loop autoplay />
