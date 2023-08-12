@@ -128,13 +128,17 @@ header {
   background-color: #ffffff;
 }
 
-.header__socials:hover {
-  color: 'persiangreen';
+.header__socials a:hover, .scroll__down:hover {
+  color: #1B998B;
 }
 
-/* .scroll__down {
-
-} */
+.scroll__down {
+  position: absolute;
+  right:2rem;
+  bottom: 5rem;
+  transform: rotate(90deg);
+  font-size: 0.9rem;
+}
 
 /* =============== MEDIA QUERIES (MEDIUM DEVICES) =============== */
 @media screen and (max-width: 1024px) {
@@ -144,6 +148,11 @@ header {
 
   section {
     margin-top: 6rem;
+  }
+
+  /* =============== HEADER STYLES =============== */
+  header {
+    height: 120vh;
   }
 }
 
@@ -156,29 +165,20 @@ header {
   section > title {
     margin-bottom: 2rem;
   }
+
+  /* =============== HEADER STYLES =============== */
+  header {
+    height: 80vh;
+  }
+
+  .header__socials, .scroll__down {
+    display: none;
+  }
+
+  
+
 }
 
-/* =============== GENERAL STYLES =============== */
-
-/*.header__contact::after {
-  content: "";
-  display: block;
-  width: 1px;
-  height: 5rem;
-  margin-right: -120px;
-  background-color: #ffffff;
-}
-
-.header__contact {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  float: right;
-  gap: 0.8rem;
-  position: absolute;
-  right: 30px;
-  bottom: 3rem;
-} */
 
 /* =============== ABOUT ME STYLES =============== */
 /* .image_1 {
