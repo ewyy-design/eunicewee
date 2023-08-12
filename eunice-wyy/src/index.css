@@ -142,6 +142,17 @@ body {
   bottom: 3rem;
 }
 
+/* =============== ABOUT ME STYLES =============== */
+.image_1 {
+  /* border-top-left-radius: 20em;
+  border-top-right-radius: 20em; */
+  padding-top: 100px;
+  height: 500px
+  /* block h-full w-full rounded-lg object-cover object-center */
+}
+
+
+
 /* =============== MEDIA QUERIES (MEDIUM DEVICES) =============== */
 @media screen and (max-width: 1024px) {
   .container {
