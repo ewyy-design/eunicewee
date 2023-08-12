@@ -1,5 +1,14 @@
+/* =============== TAILWIND CSS =============== */
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+
+/* =============== GOOGLE FONTS =============== */
 @import url("https://fonts.googleapis.com/css2?family=Carlito:wght@400;700&family=Radley:ital@0;1&family=Roboto:wght@500&display=swap");
 
+
+/* =============== === =============== */
 * {
   margin: 0;
   padding: 0;
@@ -11,7 +20,15 @@
 }
 
 :root {
-  --container-width-lg: 75%;
+  --color-bg: #023047; 
+  --color-bg-variant: #ED6A5A;
+  --color-primary: #ffffff;  
+  --color-primary-variant: #1B998B; 
+  --color-white: #F4F1E8;
+
+  --transition: all 400ms ease;
+
+  --container-width-lg: 75%; 
   --container-width-md: 86%;
   --container-width-sm: 90%;
 }
@@ -25,81 +42,82 @@ html {
 }
 
 body {
-  color: #ffffff;
   font-family: "Radley", serif;
-  /* font-family: "Carlito", sans-serif;
-  font-family: "Roboto", sans-serif; */
+  /* font-family: "Carlito", sans-serif; */
+  /* font-family: "Roboto", sans-serif; */
   line-height: 1.7;
-}
-
-@import "tailwindcss/base";
-@import "tailwindcss/components";
-@import "tailwindcss/utilities";
-
-.home {
-  background-color: #023047;
-}
-
-.photo,
-.contact,
-.photocollage {
-  background-color: #ed6a5a;
-}
-
-.about,
-.experience,
-.work {
-  background-color: #023047;
 }
 
 /* =============== GENERAL STYLES =============== */
 .container {
   width: var(--container-width-lg);
-  max-width: 100%;
   margin: 0 auto;
 }
 
-.section {
-  margin-top: 4rem;
+section {
+  margin-top: 8rem;
+}
+
+section > title {
+  color: var(--color-bg-variant);
   margin-bottom: 3rem;
 }
 
-.nav-font,
-.header-sub {
-  font-family: "Carlito", sans-serif;
+section > p {
+  color: var(--color-primary)
 }
 
-.highlight-green {
-  color: #1b998b;
+a {
+  color: var(--color-white);
+  transition: var(--transition)
 }
 
-.highlight-red,
-.title {
-  color: #ed6a5a;
+a:hover {
+  color: var(--color-primary)
 }
 
-.nav-right a {
-  padding-right: 50px;
+.btn {
+  width: max-content;
+  display:inline-block;
+  color: var(--color-primary-variant);
+  padding: 0.75rem 1.2rem;
+  border-radius: 0.4rem;
+  cursor: pointer;
+  border: 1px solid var(--color-primary);
+  transition: var(--transition)
 }
 
-.line {
-  width: 100px;
-  height: 20px;
+.btn:hover {
+  background-color: var(--color-white);
+  color: var(--color-bg);
+  border-color: transparent;
 }
 
-.contact {
-  color: #000000;
+.btn-primary {
+  background-color: var(--color-primary);
+  color: var(--color-bg);
+}
+
+img {
+  display: block;
+  /* width: 100%; */
+  object-fit: cover;
+}
+
+/* =============== HEADER STYLES =============== */
+header {
+  height: 100vh;
+  overflow: hidden;
 }
 
 .header__socials {
   display: flex;
   flex-direction: column;
   align-items: center;
-  float: left;
   gap: 0.8rem;
   position: absolute;
-  left: 30px;
-  bottom: 3rem;
+  left: 5rem;
+  bottom: 3rem
 }
 
 .header__socials::after {
@@ -110,7 +128,39 @@ body {
   background-color: #ffffff;
 }
 
-.header__contact::after {
+.header__socials:hover {
+  color: 'persiangreen';
+}
+
+/* .scroll__down {
+
+} */
+
+/* =============== MEDIA QUERIES (MEDIUM DEVICES) =============== */
+@media screen and (max-width: 1024px) {
+  .container {
+    width: var(--container-width-md);
+  }
+
+  section {
+    margin-top: 6rem;
+  }
+}
+
+/* =============== MEDIA QUERIES (SMALL DEVICES) =============== */
+@media screen and (max-width: 600px) {
+  .container {
+    width: var(--container-width-sm);
+  }
+
+  section > title {
+    margin-bottom: 2rem;
+  }
+}
+
+/* =============== GENERAL STYLES =============== */
+
+/*.header__contact::after {
   content: "";
   display: block;
   width: 1px;
@@ -128,51 +178,17 @@ body {
   position: absolute;
   right: 30px;
   bottom: 3rem;
-}
-
-.header__contact a {
-  position: relative;
-  right: -60px;
-  bottom: 5rem;
-  transform: rotate(90deg);
-}
-
-.header__socials.hidden {
-  gap: 0.8rem;
-  position: relative;
-  left: 30px;
-  bottom: 3rem;
-}
+} */
 
 /* =============== ABOUT ME STYLES =============== */
-.image_1 {
-  /* border-top-left-radius: 20em;
-  border-top-right-radius: 20em; */
+/* .image_1 {
+  border-top-left-radius: 20em;
+  border-top-right-radius: 20em;
   padding-top: 100px;
   height: 500px
-  /* block h-full w-full rounded-lg object-cover object-center */
-}
+  block h-full w-full rounded-lg object-cover object-center
+}  */
 
 
 
-/* =============== MEDIA QUERIES (MEDIUM DEVICES) =============== */
-@media screen and (max-width: 1024px) {
-  .container {
-    width: var(--container-width-md);
-  }
 
-  .section {
-    margin-top: 6rem;
-  }
-}
-
-/* =============== MEDIA QUERIES (SMALL DEVICES) =============== */
-@media screen and (max-width: 600px) {
-  .container {
-    width: var(--container-width-sm);
-  }
-
-  .section {
-    margin-top: 2rem;
-  }
-}
