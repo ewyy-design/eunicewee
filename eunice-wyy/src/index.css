@@ -41,7 +41,8 @@ body {
 }
 
 .photo,
-.contact {
+.contact,
+.photocollage {
   background-color: #ed6a5a;
 }
 
@@ -54,6 +55,7 @@ body {
 /* =============== GENERAL STYLES =============== */
 .container {
   width: var(--container-width-lg);
+  max-width: 100%;
   margin: 0 auto;
 }
 

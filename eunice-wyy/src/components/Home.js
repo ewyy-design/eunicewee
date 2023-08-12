@@ -2,12 +2,6 @@ import React from "react"
 import CV from "../assets/sample-resume.pdf"
 import WebsiteLogo from "../assets/website-logo.png"
 
-// My components
-import About from "../components/About"
-import Experience from "../components/Experience"
-import Work from "../components/Work"
-import Contact from "../components/Contact"
-
 // Loop Animations
 import { Player } from "@lottiefiles/react-lottie-player"
 
@@ -23,16 +17,16 @@ const Home = () => {
         </div>
 
         <div className="nav-right flex space-x-4 text-2xl">
-          <a href={About}>
+          <a href="#about">
             <span className="highlight-red">01.</span> About
           </a>
-          <a href={Experience}>
+          <a href="#experience">
             <span className="highlight-red">02.</span> Experiences
           </a>
-          <a href={Work}>
+          <a href="work">
             <span className="highlight-red">03.</span> Work
           </a>
-          <a href={Contact}>
+          <a href="#contact">
             <span className="highlight-red">04.</span> Contact
           </a>
         </div>
