@@ -11,7 +11,7 @@ import { BsLinkedin, BsGithub } from "react-icons/bs";
 
 const Header = () => {
   return (
-    <header className="bg-prussianblue text-center">
+    <header className="bg-prussianblue text-center pb-5">
       <div className="container">
         <div className="flex justify-center">
           <img src={WebsiteLogo} alt="website-logo" width="300" height="300" />

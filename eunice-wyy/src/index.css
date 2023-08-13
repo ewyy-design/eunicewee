@@ -56,15 +56,17 @@ body {
 
 section {
   margin-top: 8rem;
+  /* height: 100vh; */
+  height: fit-content;
 }
 
-section > title {
+section > div > div > h1 {
   color: var(--color-bg-variant);
-  margin-bottom: 3rem;
 }
 
-section > p {
-  color: var(--color-primary)
+section > div > div > p {
+  color: var(--color-primary);
+  font-family: "Carlito", sans-serif;
 }
 
 a {
@@ -105,17 +107,17 @@ img {
 }
 
 /* =============== HEADER STYLES =============== */
-header {
+/* header {
   height: 100vh;
   overflow: hidden;
-}
+} */
 
 .header__socials {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 0.8rem;
-  position: absolute;
+  position: fixed;
   left: 5rem;
   bottom: 3rem
 }
@@ -133,11 +135,52 @@ header {
 }
 
 .scroll__down {
-  position: absolute;
+  position: fixed;
   right:2rem;
   bottom: 5rem;
   transform: rotate(90deg);
   font-size: 0.9rem;
+}
+
+/* =============== NAV STYLES =============== */
+nav {
+  background: rgba(0, 0, 0, 0.3);
+  width: max-content;
+  display: block;
+  padding: 0.7rem 1.7rem;
+  z-index: 2;
+  position: fixed;
+  left: 50%;
+  transform: translate(-50%);
+  bottom: 2rem;
+  display: flex;
+  gap: 0.8rem;
+  border-radius: 3rem;
+  backdrop-filter: blur(15px);
+}
+
+nav a {
+  background: transparent;
+  padding: 0.9rem;
+  border-radius: 50%;
+  display: flex;
+}
+
+nav a:hover {
+  background: rgba(0, 0, 0, 0.3);
+}
+
+/* =============== ABOUT ME STYLES =============== */
+.about-me {
+  height: 55vh;
+}
+
+.profile-pic {
+  width: 22rem;
+  height: 25rem;
+  position: absolute;
+  border-radius: 12rem 12rem 0 0;
+  overflow: hidden;
 }
 
 /* =============== MEDIA QUERIES (MEDIUM DEVICES) =============== */
@@ -151,8 +194,21 @@ header {
   }
 
   /* =============== HEADER STYLES =============== */
-  header {
+  /* header {
     height: 120vh;
+  } */
+
+  /* =============== ABOUT ME STYLES =============== */
+  /* .about-me {
+    height: 65vh;
+  } */
+
+  .profile-pic {
+    width: 14rem;
+    height: 20rem;
+    position: absolute;
+    border-radius: 12rem 12rem 0 0;
+    overflow: hidden;
   }
 }
 
@@ -167,12 +223,26 @@ header {
   }
 
   /* =============== HEADER STYLES =============== */
-  header {
+  /* header {
     height: 80vh;
-  }
+  } */
 
   .header__socials, .scroll__down {
     display: none;
+  }
+
+  /* =============== ABOUT ME STYLES =============== */
+  /* .about-me {
+    height: 85vh;
+  } */
+
+  .profile-pic {
+    width: 14rem;
+    height: 20rem;
+    position: absolute;
+    border-radius: 12rem 12rem 0 0;
+    overflow: hidden;
+    right: 3rem;
   }
 
   
