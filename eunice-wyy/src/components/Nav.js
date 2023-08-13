@@ -9,7 +9,7 @@ const Nav = () => {
   return (
     <nav>
       {" "}
-      <a href="#">
+      <a href="#home">
         <AiOutlineHome />
       </a>
       <a href="#about">
